@@ -2,23 +2,57 @@ import './App.css'
 
 function App() {
   return (
-    <div style={{ maxWidth: '800px', margin: '40px auto', padding: '20px', fontFamily: 'sans-serif', color: '#333' }}>
-      <h1>Politique de Confidentialité - Move</h1>
-      <p><em>Dernière mise à jour : 16 mars 2026</em></p>
+    <main className="privacy-page">
+      <section className="hero">
+        <img className="brand-logo" src="/Favicon.png" alt="Logo Move" />
+        <p className="badge">Application mobile de sport</p>
+        <h1>Politique de confidentialite Move</h1>
+        <p className="subtitle">
+          Votre vie privee compte. Cette page explique clairement quelles donnees
+          sont collectees, pourquoi elles sont utilisees et comment vous gardez le controle.
+        </p>
+        <p className="updated">Derniere mise a jour : 16 mars 2026</p>
+      </section>
 
-      <h2>1. Collecte des données</h2>
-      <p>L'application Move collecte votre nom, courriel et données d'entraînement uniquement pour le bon fonctionnement social de l'app.</p>
+      <section className="card-grid">
+        <article className="policy-card">
+          <h2>1. Donnees collectees</h2>
+          <p>
+            Move peut collecter votre nom, votre adresse courriel et vos donnees
+            d&apos;entrainement (seances, progression, objectifs) pour faire fonctionner
+            l&apos;application correctement.
+          </p>
+        </article>
 
-      <h2>2. Utilisation</h2>
-      <p>Vos données servent à créer votre profil et à partager vos activités avec la communauté.</p>
+        <article className="policy-card">
+          <h2>2. Utilisation des donnees</h2>
+          <p>
+            Ces informations servent a creer votre profil, suivre vos performances
+            et partager vos activites avec la communaute selon vos parametres de compte.
+          </p>
+        </article>
 
-      <h2>3. Conservation</h2>
-      <p>Vos données sont conservées tant que votre compte est actif. Vous pouvez demander la suppression de vos données à tout moment.</p>
+        <article className="policy-card">
+          <h2>3. Conservation et suppression</h2>
+          <p>
+            Vos donnees restent disponibles tant que votre compte est actif.
+            Vous pouvez demander la suppression de vos donnees a tout moment.
+          </p>
+        </article>
 
-      <footer style={{ marginTop: '50px', borderTop: '1px solid #eee', paddingTop: '20px' }}>
-        <p>Contact : justin.soulard11@gmail.com</p>
+        <article className="policy-card">
+          <h2>4. Vos droits</h2>
+          <p>
+            Vous pouvez demander l&apos;acces, la correction ou la suppression de vos donnees,
+            ainsi que des precisions sur leur traitement.
+          </p>
+        </article>
+      </section>
+
+      <footer className="footer">
+        <p>Contact confidentalite : justin.soulard11@gmail.com</p>
       </footer>
-    </div>
+    </main>
   )
 }
 
